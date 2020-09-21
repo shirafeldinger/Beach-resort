@@ -10,7 +10,7 @@ import Navbar from './components/Navbar';
 
 function App() {
   return (
-    <>
+    <div>
     <Navbar/>
     <Switch>
     <Route exact path="/" component={Home}/>
@@ -19,7 +19,7 @@ function App() {
     {/* Error doesnt have exact path becuse whatever location that doesnt match the above paths will lead to Error page */}
     <Route component={Error}/>
     </Switch>
-    </>
+    </div>
   );
 }
 
